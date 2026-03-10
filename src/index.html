@@ -1,17 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Lab 04 - My First App</title>
+<link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
 
+<main>
+
+<h1>Cloud Lab 04</h1>
+
+<p>
+Questa applicazione è stata pubblicata utilizzando servizi
+<strong>PaaS</strong> senza gestire direttamente server,
+sistema operativo o configurazioni di rete.
+</p>
+
+<div class="status">
+ONLINE • AZURE / AWS
+</div>
+
+<section class="info">
+
+<p><strong>Repository:</strong> GitHub</p>
+
+<p><strong>Deployment:</strong> automatico (CI/CD)</p>
+
+<p><strong>Cloud Platforms:</strong> Azure Static Web Apps / AWS Amplify</p>
+
+<p><strong>Ultimo aggiornamento:</strong> <span id="deployTime"></span></p>
+
+</section>
+
+<footer>
+
+Laboratorio Certificazioni AI – Cloud Computing 2026<br>
+Pipeline: GitHub → Azure / AWS → Web App
+
+</footer>
+
+</main>
+
+<script>
+
+const now = new Date();
+document.getElementById("deployTime").textContent =
+now.toLocaleString();
+
+</script>
+
+</body>
 </html>
